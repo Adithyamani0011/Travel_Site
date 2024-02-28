@@ -1,0 +1,65 @@
+@media only screen and (max-width: 400px) {
+  .container.m-3 {
+    margin: 0; /* Adjust margin for smaller screens */
+  }
+  .container.m-5 {
+    margin: 0; /* Adjust margin for smaller screens */
+  }
+  .fs-1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .fs-5 {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+  .col-9 {
+    width: 100%; /* Make the content column full width on smaller screens */
+  }
+  .col-3 {
+    width: 100%; /* Make the sidebar column full width on smaller screens */
+  }
+  img {
+    width: 100%; /* Make the image full width on smaller screens */
+    height: auto; /* Maintain aspect ratio of the image */
+    margin: 20px 0; /* Adjust margin for smaller screens */
+  }
+  .navbar-brand img {
+    width: 20px; /* Decrease the width of the logo image */
+    height: auto; /* Maintain aspect ratio of the logo image */
+  }
+  .navbar-brand {
+    font-size: 0.8rem; /* Decrease the font size of the navbar brand */
+  }
+  .navbar-brand.text-end img {
+    width: 20px; /* Decrease the width of the contact icon image */
+    height: auto; /* Maintain aspect ratio of the contact icon image */
+  }
+  .navbar-brand.text-end {
+    font-size: 0.8rem; /* Decrease the font size of the contact information */
+  }
+  .col-9 {
+    width: 100%; /* Make the content column full width on smaller screens */
+  }
+  .col-3 {
+    width: 100%; /* Make the sidebar column full width on smaller screens */
+  }
+  .widget_categories {
+    height: auto; /* Reset height to auto for smaller screens */
+    overflow-y: auto; /* Add vertical scrollbar for categories list */
+  }
+  .widget-title {
+    font-size: 1.2rem; /* Decrease the font size of the widget title */
+  }
+  .cat-item {
+    margin-bottom: 10px; /* Add some space between category items */
+  }
+  .cat-item a {
+    display: block; /* Make category links block-level */
+    padding: 5px 0; /* Add padding to category links */
+  }
+  .cat-item a:hover {
+    text-decoration: underline; /* Underline category links on hover */
+  }
+  .cat-item hr {
+    display: none; /* Hide the horizontal rule between category items */
+  }
+}

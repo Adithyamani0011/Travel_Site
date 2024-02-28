@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with me</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/011/003/356/original/cute-travel-icon-free-png.png">
+    <!-- botstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Caveat:wght@700&family=Ephesis&family=Montserrat:ital,wght@1,500&family=Nova+Square&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Alkatra; background-color: rgb(198, 238, 238);  background: linear-gradient(to bottom left, #73b673 0%, #d9b072 100%)">
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid bg-warning">
+          <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX/////pQD/ogD/oAD/0qD/ngD/+u7/rDD/0Zz/3bn//ff/rzv/qyP/pgD///z/+/P/8Nn/6Mb/wWf/zYf/9eX/37H/8t7/7ND/1Zr/uU3/yn3/5L7/ryr/4bb/sDP/3az/2J//vmD/0ZL/xG7/qxj/uVD/6cr/tUL/yHT/uU7/rAb/vWT/sUX/vVn/1JT/tDu5RLoHAAAI10lEQVR4nO2da1viOhSF28QyczhQQFEEERQrqHN0/v+/O4AVKE33JZem5cn6OtTmnfSSrH1pFAUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBTVeg4erl+mvxmsxfVuOumy6dL36SKQUIm6+hJAyma+GHL7xKkvawHYqmSzuO0S+u5dY+h6vlmR/NibwdWeybdN3lJA3KQZ429L5+5Hsj0C+wXPie4jGSmbANA577b1Aj5J/K+/Gh1a8HHCJ/qQCsP1X6I+kEvHhMiYw17oMOGr3M7Sk0hLn7qJmcKv+2QInnV8aodgUCWcXdo1uJe8v+SbcSwxPr1Hfo3Gh0+v06RKncLt+ezxMoe+huFL2Q/h1mVO4ncTbnDDzPRJnWuTLNcIUCtk8Ed7g+fr0Gf9p9vvqd9N0terjEzPbAXbwH8biTbVW96xPwiT2djYj5SKN5bVvnpKmpHHv3voz0opU3vgmOtML6QUgV9uf/qWtuRuGSAOMxZ/t6566qUhWvqlO9Eb1I7I0uiN7F8XFulfdkAedDGgPmhzxyTdZrhv6mJNhtGQs2ZKlb7a97hmWmXyIrjibe9kERA7gbsQswlg+4iNwrCeW6ckmjAUcFnCvW95GSF5xCX0jch4b++HyCWNRYZnXokfuVlaHMI7vvAGu2YPVIyz7yTVpxB+rHqHoU4LJ9jXUmIxKwgzcNIqMmhNgFRBm6SvNmErC/9bgLe0D8Q4GjNe/WIT/Iu8dMR/UDDjOwGtUrKMekxB584hFvYgY4CjqsgmR5ZGYo3kdFjXog4Db9bUOYXQPz+J7fYhdOPi33xDoECKrePnKz5fTU2cBA+6tbS1CZC8tP+sBTGErKXmK9AkxxHo8xnfwbklyc0WTEDEM6kBMYWP04B7pEiK2nXRvhj/DM3gwObUJo2sYceYYED79EdCAMPr0iUgGNCFEIgTyyyEgnCMiX05+akIYTeHXkTtEznPOiBDJJ3LmFCOAr4UfGxFGXXhRcYiX29UX/DKeFleNZoQYonSBCAOK6fkQzQijDrx72S3uLQvZvZW2NqaEhB2oXbF34MaE2Cwmdp3iW/gSXZS3NeaE0RBOabDqFMOphEqbyAIhanbZs1FhY1RkKjfTBmE0gT11YcsMh89TYddaIcRMZ0tOsd61YodQ6/JhAyIpTBU3gyXC6BF+xllwiscwn7qUwiIhEt8SPVMbtQP7htXhS2uE2Kt4YTaL4w9NQIuEmFO8MbFRO/AuJgHSCCwSIjZqaUnMkMkexiYh5hRvwIMBDeDqQDgRxCohZqP+0QPswl5C7vzWQ+jEKU5fYdcJBrRNiNmoOn7/BgbEUiNtE2I2H99jhJ1fPL3VOqFtp5hujNZGiFxVzJxi5Kp/xv+CA0IsJsSxUd/MA0AuCFPk6U7PKZ5ZeDS7IIwGiMdIzUZdwTP4TvojTgjR+DrNRoXzBahLJDeEGCLJDGc6vzUTRmNkFnGPEdmNbagbTleE0Vj5h49nwBCRnN+/5HwPZ4RYVVGl6/AtpFUFI3XeGSGaWC4gG3WEHQ3teeshJBRJV3UaiUgpseTqAEeEcHghP0mljYoYozkiMebjhhD2FjFEYs5vQguIOCGkZs6rEclJzbTInQtCeua8ymMc01s2kWI+DggnjMTycsItEnEtHt0nxHzsE05Y9UeiV7RREWu7dDgeELFOiMVPSqcqOMVIxmj56B6KaJtwyJuDuJgdgmy7VCOdY4iWCZEAkVLHDB8kJVYpkSErVLuEnMfEUT8eow6gOjvBGSGyZarUt6GEpMRWCtlI2SREtr2A9h4jbIwCgjfDFgn1AfdOMZyuCgo0NOwRDuC7SMD/LOH/HrGBjwZMKXuEmIWYmkzSi76xaI0QfkzsbWDYKcbGr2sO2yJErPzvAJHW2+DwNtFEtERIC8cM4Lup6ujPlHKSqiCNHULk3IfiC+RppJR8PazqtAJtVgjpAaIBnDSiGsriZGWO3OzKYKkNQk5ou8NsSSw2p2synYC3BUJeCRRv6Xq+Q+6+sqsDzAm5KSZYZXJhHOf9VLfj5SaeGBMigIolI32HpUr4Q7aQ5ZiPKSGS6jVV7WxIdmhcZcUhNkDJDDck1EvXI5pxFT7TmJelaEaIpVxW7U2RtOlcVUYaLxHTiBBJmwVySgnte4HIDTKLxbCWCaFJ6jNui0OGNich2oBwBJ8FSV9HIqBI3AVx/k/NcH1CrAQBc/nAp3CC1UvRCxO0Cc3LSIBUC0JwkHyL6BJqlgYUEatmkRTDRhAPZrgmIVbORYteVizZsYzRXMQiLz1CWyV5ykU7ubiWVqinRYiVVdIL8hQ12ZLeLZRUbKlDaLP6t2S+EDJGj0LSpt41Ce2WN58hsgBJRc98Qtsl6gVEds9evHCdT2i9zcAyy5uMi6THL4xGHQY2IcH55aq7XCRbyemtTuEQ1kAiZRJaT8XPNZ5olyhifWR4/dpi+BJ13bJFLfh/vYJDq2+iJ0ByE29jQn8d6FN+zEeH0GuLfXaAXIOQUtzhTik35sMnrK8NnVpIkWl5vFzCOlsJqsXMIuB2uxZzz3w7RFY21paQ0z667paearFiPvKR0z+6/rasaiE2akHJOhqSkyhFvxmArKy6pBN1qXPopz2yWvTUz48u+atyvlpcq0UOa+3SO96IF7WvNuVqEZuX73faxI8N+Gs1rxbcjvtHe7uTdts2DZA4i9n+4fiO/1S8/dM8Eb6mJr53CZR3flu/LPft6HbxX7ZVP594pH2XrIU6OJ6dy/kgd1HisBFifCGqTToxrTsX+Z3OQntM7hd4WqFiaIzyPciW6azV+MD3eKxLZGd+C22Z1yKV21QuL+uVoWr7CzcYaZnUWR6ry5nFqiwP1ocFm6zqPJ1HcQkvDREDOSLjRftvRrkBHbP0puXTKASapjPZtPhuFMknxW55WFC2zw2UkBtqGtroOW4dpJD9a07P9PHyM05aQylk0n++ZVvy3dHT9TxOmq94/vI0MYjbdpoufbSgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKB69T/XsdBrVCYRWgAAAABJRU5ErkJggg==" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            keralaexplore@gmail.com
+          </a>
+         
+            <a class="navbar-brand text end" href="#">
+              <img src="https://w7.pngwing.com/pngs/538/256/png-transparent-viber-computer-icons-telephone-call-viber-text-orange-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              +91 8596321471
+            </a>
+          
+        </div>
+      </nav>
+    <!-- 2nd nav -->
+    <nav class="navbar navbar-expand-lg  bg-success bg-opacity-75  text-center ">
+        <div class="container-fluid bg-success bg-opacity-75">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-location-dot"></i><img src="https://www.ekeralatourism.net/wp-content/uploads/2016/11/logo-2.png" height="80px" width="200px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>&nbsp;&nbsp;
+          <form class="d-flex bg-success bg-opacity-75" role="search p-0">
+            <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-1 text-light">
+                  <li class="nav-item">
+                    <a class="nav-link active text-center me-5 text-light" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-5 text-light" href="#categories-2">Links</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled me-5 text-light" aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+                </div>
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button  class="btn btn-outline-warning me-5  text-white" type="submit" >ENQUIRY</button>&nbsp; -->
+          <a href="./enquiry.html" class="btn btn-outline-warning  mt-2 p-3 text-white " type="submit">ENQUIRY</a>&nbsp;
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="btn btn-outline-warning me-5 text-white " type="submit">CONTACT</button> -->
+          <a href="./contact.html" class="btn btn-outline-warning mt-2 p-3  text-white " type="submit">CONTACT</a>&nbsp;
+        
+        
+        </form>
+      </div>
+    
+
+         
+           
+      </nav>
+    <!-- next line -->
+    <div class="avada-page-titlebar-wrapper">
+        <div class="fusion-page-title-bar fusion-page-title-bar-none fusion-page-title-bar-left">
+            <div class="fusion-page-title-row">
+                <div class="fusion-page-title-wrapper">
+                    <div class="fusion-page-title-captions">
+                         <h1 class="entry-title m-3 p-3">Places to Visit in Kerala</h1>
+     
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- next para -->
+    <section id="home">
+    <div class="container m-3 mx-5 col-12">
+    <div class="container">
+        <div class="row" >
+            <div class="col-12 bg-light fs-1 text-dark">About Us..</div>
+            <!-- <div class="col- bg-primary"></div> -->
+            
+        </div>
+        <div class="container " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align: justify;">
+            <div class="row " >
+                <div class="col-12 bg-light fs-5 text-dark ">Kerala is the perfect choice of destination to plan your escape to and you have landed at the right place to make this tropical vacation happen! Famously known as the ‘God’s Own Country’, Kerala is the picturesque beauty that is located in the tropical Malabar Coast of India and here we give you a wide selection of Kerala Blogs, expertly weitten to cater to all your travel needs. You can go as far as you can with your imagination and find the best of options to make your Kerala trip come true with a lifetime of memories and adventures to look forward to. The backwaters of Kerala are a perfect place to unwind in the midst of swaying palm trees and spice plantations. Soak in the aroma of coffee and go on an evening stroll exploring the tropical landscape of Kerala. Find all the information about comfortable homestays or luxurious houseboats on this Kerala trip blog for a blissful vacation in this souther beauty. With what you'll learn from these Kerala tour blogs you are bound to have a hassle free trip. Also, if you want motivation to traverse the serene backwaters of this piece of paradise, teh below given write-ups will do the trick for you. Discover hidden gems, go off the beaten track and share your best travel moments with your friends and family back home!</div>
+       
+                
+            </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- boxes -->
+
+<h2 style="text-align: center;">Places</h2>
+<div class="row m-5">
+    <div class="col-9 text-center">
+      
+          <a href="#allepy" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Alleppy</a>
+
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <a href="#Wayanad" class="btn btn-outline-success me-5 text-warning  bg-opacity-50 "style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Wayanad</a>
+        <a href="#Trissur" class="btn btn-outline-success me-5  text-warning bg-opacity-50"style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Trissur</a>&nbsp;
+       
+
+        <a href="#cochin" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Cochin</a>&nbsp;
+<a href="#munnar" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Munnar</a>&nbsp;
+<a href="#kumarakam" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Kumarakam</a>&nbsp;
+<a href="#vagamon" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Vagamon</a>&nbsp;<br>
+<a href="#thekady" class="btn btn-outline-success me-5 text-warning bg-opacity-50 m-3" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Thekady</a>&nbsp;
+<a href="#poovar" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Poovar</a>&nbsp;
+<a href="#kuttanad" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Kuttanad</a>&nbsp;
+<a href="#bekel" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Bekel</a>&nbsp;
+<a href="#ashtamudi" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Ashtamudi</a>&nbsp;
+<a href="#thiruvanathapuram" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Thiruvananthapuram</a>&nbsp;
+<a href="#ponmudi" class="btn btn-outline-success me-5 text-warning bg-opacity-50 m-3" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Ponmudi</a>&nbsp;
+<a href="#varkala" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">varkala</a>&nbsp;
+<a href="#malampuzha" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Malampuzha</a>&nbsp;
+<a href="#palakad" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Palakad</a>&nbsp;
+<a href="#neliambathy" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Nelliyampathy</a>&nbsp;
+<a href="#idukki" class="btn btn-outline-success me-5 text-warning bg-opacity-50" style="box-shadow: 2px 3px rgb(2, 75, 2);" type="submit">Iduki</a>&nbsp;
+ <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2023/03/kerala2.jpg" alt="" height="350px" width="1000px" style="margin: 20px;">
+        
+        </div>
+    <div class="col-3 bg-light">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success  " type="submit">Search</button><br>
+  
+            </form>
+        
+          
+      </nav> 
+      <!-- <h1  style="color: black; text-align: center; margin:10px ;font-family: 'Times New Roman', Times, serif;">Categories</h1> -->
+      <section id="categories-2" class="widget widget_categories"><div class="heading"><h4 class="widget-title text-center m-3">Categories</h4></div>
+        <ul style="height: 500px;">
+            <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.tourmyindia.com/beaches/beaches-in-kerala.html ">Beaches</a><hr>
+  </li>   
+  <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.tripsavvy.com/best-time-to-visit-kerala-1539471 ">Best time to visit places</a><hr>
+  </li>   
+  <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.booking.com/homestay/region/in/kerala.en-us.html?aid=2393716&label=travelus&sid=da39214f64b49c54476379d6fa328365 ">Home stay</a><hr>
+  </li>   
+  <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.thrillophilia.com/kerala-wildlife">Wild life</a><hr>
+  </li> 
+  <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.thetoptours.com/asia/india/kerala/water-sports-in-kerala ">Water sports</a><hr>
+  </li>  
+  <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.tourmyindia.com/beaches/beaches-in-kerala.html ">Wild life</a><hr>
+  </li>     
+  <li class="cat-item cat-item-9   text-success"><a  style="text-decoration: none;" href="https://www.tripadvisor.in/Attractions-g297631-Activities-c49-Kerala.html">Museums</a>
+  </li>    
+  </ul> 
+    </div>
+    <!-- pictures -->
+    <section id="allepy">
+<h1 style="margin: 10px ;">1.Alleppey(Allapuzha)</h1>
+<div class="row">
+  <div class="image">
+    <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Alleppey.jpg" alt="" ><br>
+
+  </div>
+  
+
+</div>
+<p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">There is the whole of Kerala in one side, and then there is this heavenly tourist destination called Alappuzha or Alleppey! Esteemed as the ‘Backwater Capital of India’ or the ‘Venice of the East’, Alleppey is known for its silent backwaters and bountiful beauty!
+
+  Seated on the banks of the azure Vembanad Lake, it is in fact one of the most popular backwater destinations in Kerala and one of the highest sought-aftertourist places in Kerala. Visit this paradise; enjoy houseboat cruise and stay, village walks, Ayurvedic therapies and lot more!</p>
+  
+  
+  <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+       
+
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Year-round destination</p><hr>
+    
+    <!-- <span class="btm-blog-br"></span><span class="head-blog"><i class="fa fontawesome-icon fa-picture-o"></i> Tourist Attractions:</span>
+    <a href="https://www.ekeralatourism.net/attractions/vembanad-lake/"> -->
+      <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+    <p>Vembanad Lake </a>, Alleppey Beach, Marari Beach, Krishnapuram Palace, Pathiramanal, Kuttanad Backwaters, Arthunkal Church, Ambalapuzha Temple, Mannarshala Temple, Karumadikuttan Statue, St. Mary Rorane Church</p><hr>
+    
+    <!-- <span class="btm-blog-br"></span><span class="head-blog"><i class="fa fontawesome-icon fa-bullseye"></i> :</span>
+     --><h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+   
+    <p>Alleppey Railway Station</p><hr>
+    
+    <!-- <span class="btm-blog-br"></span><span class="head-blog"> :</span>
+     --><h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+    <p>Summer (April – June), Winter (October – Mid March), Monsoon (July – September)</p><hr><br>
+    </section>
+
+
+
+
+
+    <section id="Wayanad">
+      <h1 style="margin: 10px ;">2.Wayanad</h1>
+      <div class="row">
+        <div class="image">
+          <img src="https://th.bing.com/th/id/R.22a4fe06870071167abb166c1ab7e33c?rik=6cqa0DjtlhlAhw&riu=http%3a%2f%2fblog.getsholidays.fr%2fwp-content%2fuploads%2f2014%2f08%2fMountain-Pass-Wayanad.jpg&ehk=mNrijOm6%2b5T9gPBkKoeGIjkf2Gu%2bsucPYy8QghC5d6Q%3d&risl=&pid=ImgRaw&r=0" alt="" height="500px" width="900px" ><br>
+      
+        </div>
+        
+      
+      </div>
+      <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Cradled in the lap of the Western Ghats, Wayanad truly deserves a top rank in the list of places to visit in Kerala. Situated at an astounding height of 700-2,100m, this stunning hill station is all about fantasy, untouched nature, unforgettable moments, and merriment!
+
+        Adding more to Wayanad’s enchanting beauty, visitors can also revisit and unfold history while visiting this hilly retreat. Yes, the lush and pristine forests in Wayanad are said to be inhabited more than 3,000 years ago.</p>
+        
+        
+        <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+             
+      
+          <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Year-round destination</p><hr>
+          
+        
+            <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+          <p>Wayanad Wildlife Sanctuary, Banasura Sagar Dam, Chembra Peak, Soochipara Falls, Sentinel Rock Falls, Kanthanpara Waterfalls, Kuruva Island, Pookode Lake, Lakkidi, Muthanga Wildlife Sanctuary, Pakshipathalam, Edakkal Caves, SulthanBthery, Chain Tree</p><hr>
+          
+      <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+         
+          <p>Nilambur Railway Station (92km / 3 Hours)</p><hr>
+          
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+          <p>Summer (April – June), Winter (October – Mid March), Monsoon (July – September)</p><hr style="color:green ; size: 50px;" ><br>
+          </section>
+          
+
+    <section id="Trissur">
+      <h1 style="margin: 10px ;">3.Trissur</h1>
+      <div class="row">
+        <div class="image">
+          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Thrissur.jpg" alt="" height="500px" width="900px" ><br>
+      
+        </div>
+        
+      
+      </div>
+      <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">If you are a cultural fan or enthusiastic about the rich traditions of Kerala, Thrissur should be ranked as #1 in your travelogue! Also called ‘Trichur’, this city was once the capital of Kingdom of Cochin, and is fondly called the ‘Cultural Capital of Kerala’.
+
+        Being edged with a number of scared temples and other religious spots, Thrissur serves as an important pilgrimage among the Hindu devotees. Yes, this city is the venue ground of the famous ‘Temple Festival’ or the ‘Thrissur Pooram’ that is known and participated by devotees from across the globe.
+        
+        Visit the city during this festival, and you will find the entire Trichur uniting and celebrating the festival with high vigour and equal gusto!</p>
+        
+        
+        <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+             
+      
+          <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Year-round Destination / April to May (Thrissur Pooram is celebrated)</p><hr>
+          
+     <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+          <p>Chavakkad Beach, Nattika Beach, Vatanappally Beach, Athirapally Waterfalls, Guruvayoor, Peechi Dam, Peechi-Vazhani Wildlife Sanctuary, Thrisuur Zoo, Chimmony Wildlife Sanctuary, Chimmony Dam, Thrissur Pooram, Archaeological Museum, PunnathurKotta, Sri Maheswara Temple, Lourdes Cathedral, Marth Mariam Church, Vaddakunathan Temple, Thiruvambadi Sri Krishna Temple, Dolours Basilica, ParamekkavuBhagavathy Temple, Arattupuzha Temple</p><hr>
+          
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+         
+          <p>Thrissur Railway Station</p><hr>
+          
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+          <p>Summer (March - May), Winter (December - February), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+          </section>
+
+
+
+
+          <section id="cochin">
+            <h1 style="margin: 10px ;">4.Fort Kochi</h1>
+            <div class="row">
+              <div class="image">
+                <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Cochin.jpg" alt="" height="500px" width="900px" ><br>
+            
+              </div>
+              
+            
+            </div>
+            <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kochi or Cochin is a unique placein God’s Own Country that is perfectly blended with cultural values and modern ideas! Fondly called the ‘Queen of the Arabian Sea’, this imposing port-city has always been an attraction point since the beginning of history.
+
+              A melting point of numerous culture and traditions, Cochin has embraced all the modern outlook to become one of the most developed metropolis in India. Be it the essence of the Dutch establishments, British history, Chinese nets, or the traditional spice markets, Cochin will surely make you fall in love once again!</p>
+              
+              
+              <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                   
+            
+                <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">July (Beginning of Monsoon) to April (Early Summer)</p><hr>
+                
+ <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                <p>Fort Kochi, Vypeen Island, Vypeen Beach, Cherai Beach, Andhakaranzhi Beach, Marine Drive, Bolghatty Island, Guruvayoor, Chinese Fishing Nets, St. FrnacisChirch, Basilica of Santa Cruz, Thrikkara Temple, Kanjiramattam Masjid, Shri Guru Singh Sabha Gurudwara, Jewish Synagogue, Cochin Cultural Centre, Malayattoor, Mattancherry, Lulu Mall (Largest Mall in India), Kodannad Elephant Training Centre, Hill Palace Museum, Edappally Museum, Princess Street, Kerala Kathakali Centre, Vasco Da Gama Square</p><hr>
+                
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+               
+                <p>Kochi Railway Junction</p><hr>
+                
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                <p>Summer (March - June), Winter (July - September), Monsoon (October - February)</p><hr style="color:green ; size: 50px;" ><br>
+                </section>
+
+
+
+
+
+
+                <section id="munnar">
+                  <h1 style="margin: 10px ;">5.Munnar</h1>
+                  <div class="row">
+                    <div class="image">
+                      <img src="https://www.ekeralatourism.net/wp-content/uploads/2015/12/munnar-1.png" alt="" height="500px" width="900px" ><br>
+                  
+                    </div>
+                    
+                  
+                  </div>
+                  <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Yet another gorgeous hill station in the lap of the fascinating Western Ghats, Munnar needs no introduction. Rising 1,600m above the sea level, a vacation in the beguiling locales of this hilly retreat is all about the lofty clouds, picturesque mountains, rolling hills, and a soothing ambience.
+
+                    Canopied mostly by never-ending tea plantations and lush forests, you simply cannot miss out Munnar while searching for the best tourist destination in Kerala. Be it during the summer or the winter, monsoon or the spring, Munnar will always make you crave for more!</p>
+                    
+                    
+                    <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                         
+                  
+                      <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Year-round Destination</p><hr>
+                      
+                   
+                        <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                      <p>Eravikulam National Park, Mattupetty Dam, Pothamedu View Point, Anamudi, Blossom Park, Devikulam, Pallivasal, TATA Tea Museum, Vattavada, Attukal Waterfalls, Cheeyapara Waterfalls, Kundala Lake, Nyayamakad, Meesapulimala, Kolukkumalai, Lock-Hart Gap, Chithirapuram, Rajamala, Top Station, Marayoor Dolmens, Indo Swiss Diary Farm, Lite of Pi Church,</p><hr>
+                      
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                     
+                      <p>Ernakulam Junction (128km / 4 Hours)</p><hr>
+                      
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                      <p>Summer (March - May), Winter (December - February), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+                      </section>
+      
+      
+        <section id="kumarakam">
+                        <h1 style="margin: 10px ;">6.Kumarakam</h1>
+                        <div class="row">
+                          <div class="image">
+                            <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kumarakom.jpg" alt="" height="500px" width="900px" ><br>
+                        
+                          </div>
+                          
+                        
+                        </div>
+                        <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Adorned by the magical charm of the Vembanad Lake, Kumarakom is another beguiling  backwater destination in God’s Own Country. Located within the proximity to Kottayam city, this is the place where even being lazy is also one of the best things you can do during your Kerala holidays.
+
+                          Adorned by the charm of the emerald Vembanad Lake, the evergreen coconut grooves, breezy rice fields, and lot more, Kumarakom is popular among all the types of visitors. However, backwater cruise and houseboat stays are the most popular thing to do in this beautiful tourist destination</p>
+                          
+                          
+                          <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                               
+                        
+                            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">September (Monsoon End) to March (Winter End)</p><hr>
+                            
+                          
+                              <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                            <p>Fort Kochi, Vypeen Island, Vypeen Beach, Cherai Beach, Andhakaranzhi Beach, Marine Drive, Bolghatty Island, Guruvayoor, Chinese Fishing Nets, St. FrnacisChirch, Basilica of Santa Cruz, Thrikkara Temple, Kanjiramattam Masjid, Shri Guru Singh Sabha Gurudwara, Jewish Synagogue, Cochin Cultural Centre, Malayattoor, Mattancherry, Lulu Mall (Largest Mall in India), Kodannad Elephant Training Centre, Hill Palace Museum, Edappally Museum, Princess Street, Kerala Kathakali Centre, Vasco Da Gama Square</p><hr>
+                            
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                           
+                            <p>Kochi Railway Junction</p><hr>
+                            
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                            <p>Summer (March - June), Winter (July - September), Monsoon (October - February)</p><hr style="color:green ; size: 50px;" ><br>
+                            </section>
+            
+            
+          
+                            
+
+                            <section id="vagamon">
+                              <h1 style="margin: 10px ;">7.Vagamon</h1>
+                              <div class="row">
+                                <div class="image">
+                                  <img src="https://www.ekeralatourism.net/wp-content/uploads/2017/12/Vagamon.jpg" alt="" height="500px" width="900px" ><br>
+                              
+                                </div>
+                                
+                              
+                              </div>
+                              <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Considering that you want more from your Kerala holidays, you should not miss a trip to Thekkady, the evergreen abode of God’s Own Country! Strategically located and well-connected with some of the major Kerala holiday destinations, this is the place that always wears the green colour of Mother Nature!
+
+                                The ‘Spice Capital of Kerala’, Thekkady is much popular as the natural abode to numerous exotic wildlife species. And while talking about wildlife species, the Periyar National Park in Thekkady will surely behold all your senses with its fascinating range of dwellers!</p>
+                                
+                                
+                                <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                     
+                              
+                                  <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Year-round Destination</p><hr>
+                                  
+                                
+                                    <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                  <p>Murinjupuzha Water Falls, Ulipooni Wildlife Sanctuary, ElaveezhaPoonchira, Idukki Arch Dam, Pine Hills, Parumthumpara Point, Kurisumala, Peermade, Mangala Devi Temple, Pattumalai Church, Kuttikanam Palace</p><hr>
+                                  
+                                 
+                                 <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                 
+                                  <p>Kottayam Railway Station (64km / 2 Hours)</p><hr>
+                                  
+                                  <!-- <span class="btm-blog-br"></span><span class="head-blog"> :</span>
+                                   --><h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                  <p>Summer (March - June), Winter (October - March), Monsoon (July - September)</p><hr style="color:green ; size: 50px;" ><br>
+                                  </section>
+
+
+
+
+
+                                  <section id="thekady">
+                                    <h1 style="margin: 10px ;">8.Thekady</h1>
+                                    <div class="row">
+                                      <div class="image">
+                                        <img src="https://www.ekeralatourism.net/wp-content/uploads/2017/12/Thekkady1.jpg" alt="" height="500px" width="900px" ><br>
+                                    
+                                      </div>
+                                      
+                                    
+                                    </div>
+                                    <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Considering that you want more from your Kerala holidays, you should not miss a trip to Thekkady, the evergreen abode of God’s Own Country! Strategically located and well-connected with some of the major Kerala holiday destinations, this is the place that always wears the green colour of Mother Nature!
+
+                                      The ‘Spice Capital of Kerala’, Thekkady is much popular as the natural abode to numerous exotic wildlife species. And while talking about wildlife species, the Periyar National Park in Thekkady will surely behold all your senses with its fascinating range of dwellers!</p>
+                                      
+                                      
+                                      <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                           
+                                    
+                                        <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">October to February (Winter)n</p><hr>
+                                        
+                                      
+                                          <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                        <p>Periyar National Park, Periyar Lake, Gavi, Kumily, Caramom Hills, Spring Valley Mountain, Pandikuzhi, Chellarkovil, Panchalimedu, Vandiperiyar, Grampi, Mangala Devi Temple</p><hr>
+                                        
+                                       
+                                       <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                       
+                                        <p>Kottayam Railway Station (107km / 3 Hours)</p><hr>
+                                        
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                        <p>Summer (March - May), Winter (October - February), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+                                        </section>
+            
+            
+
+
+                                        <section id="poovar">
+                                          <h1 style="margin: 10px ;">9.Poovar</h1>
+                                          <div class="row">
+                                            <div class="image">
+                                              <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Poovar.jpg" alt="" height="500px" width="900px" ><br>
+                                          
+                                            </div>
+                                            
+                                          
+                                          </div>
+                                          <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">While in the Poovar Beach, you can witness one of the rarest phenomenon in the world. It is in this scenic beach, where the sea meets a river and a lake. Well, this is not it! Poovar estuary is also serves as the confluence ground of the beach and land!
+
+                                            A quintessential display of exotic flora and fauna, this beach portrays much of traditional ways of coastal living where fishing plays an important part of daily life. Situated around 12km from Kovalam, Poovar Beach has gained immense popularity as a popular picnic spots among the beach lovers and other types of visitors.</p>
+                                            
+                                            
+                                            <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                 
+                                          
+                                              <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">August (Mid-Monsoon) to March (Early Summer)</p><hr>
+                                              
+                                            
+                                                <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                              <p>Poovar Beach, Thiruparappu Falls, Fishing Village, Kalipoika, Kozhipara, Thikkoti Light House</p><hr>
+                                              
+                                             
+                                             <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                             
+                                              <p>Thiruvananthapuram Railway Station</p><hr>
+                                              
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                              <p>Summer (March - May), Winter (December - March), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+                                              </section>
+            
+                                              
+                                        <section id="kuttanad">
+                                          <h1 style="margin: 10px ;">10.kuttanad</h1>
+                                          <div class="row">
+                                            <div class="image">
+                                              <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kuttanad.jpg" alt="" height="500px" width="900px" ><br>
+                                          
+                                            </div>
+                                            
+                                          
+                                          </div>
+                                          <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Fondly called as the ‘Rice Bowl of Kerala’, Kuttanad is truly a poetry in motion! Gracious, tranquil, evergreen, and still untouched by the outer world, this magnificent tourist destination in God’s Own Country is fringed with captivating groves of coconut trees, and is interconnected with a bucolic network of canal. This makes Kuttanad a place to behold among the visitors.
+
+                                            While the intrinsic network of canals add more to the beauty and charm of Kuttanad, its evergreen swaying paddy fields make it truly irresistible for the visitors. Also, the rustic and traditional way of living that still persists in this piece of heaven will surely make you feel and live the true colours of Kerala.</p>
+                                            
+                                            
+                                            <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                 
+                                          
+                                              <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                August to March</p><hr>
+                                              
+                                            
+                                                <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                              <p>Champakulam, Chengannur, Pamba River, Meenachil River, Achankovil River, Manimala River, Punnamada Lake, Backwaters, Paddy Fields, Traditional Water Turbines,
+
+                                              </p><hr>
+                                              
+                                             
+                                             <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                             
+                                              <p>Alleppey Railway Station (22km) and Changanacherry Railway Station (28km)</p><hr>
+                                              
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                              <p>Summer (April - June), Winter (October - Mid March), Monsoon (July - September)</p><hr style="color:green ; size: 50px;" ><br>
+                                              </section>
+
+
+                                              <section id="bekel">
+                                                <h1 style="margin: 10px ;">11.Bekel</h1>
+                                                <div class="row">
+                                                  <div class="image">
+                                                    <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Bekal.jpg" alt="" height="500px" width="900px" ><br>
+                                                
+                                                  </div>
+                                                  
+                                                
+                                                </div>
+                                                <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Located in the Kasaragod district of Kerala, Bekal is among the most scenic hamlets you can ever visit while on a Kerala tour. A combined beauty of the mighty Arabian Sea and lush landscapes, this tiny, yet pictorial village is of utmost historical importance. The glorious Bekal Fort testifies this fact vividly.
+
+                                                  Serving as a perfect getaway from the concrete life, Bekal enjoys a pleasant climate while wearing a greener shade throughout the year. If you are yearning for silent, yet joyous holiday experience in Kerala, Bekal is the ideal hideout for you!
+      
+                                             </p>
+                                                  
+                                                  
+                                                  <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                       
+                                                
+                                                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                    
+October to March
+
+</p><hr>
+                                                    
+                                                  
+                                                      <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                                    <p>Bekal Fort, Pallikere Beach, Bekal Fort Beach, Valiyaparamba Backwaters, Kappil Beach, Hosdurg Beach, Nileswaram Cultural Centre, Nityanandarshan Caves, TulurVanam, Bekal Hole Aqua Park, Mallikarjuna Temple, Malik Dinar Mosque Nearest Airport: Mangalore Airport (50km)
+      
+                                                    </p><hr>
+                                                    
+                                                   
+                                                   <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                                   
+                                                    <p>
+                                                      Kasaragod Railway Station (12km), Kanhangad Railway Station (14km)</p><hr>
+                                                    
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                                    <p>Summer (March - June), Winter (December - February), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+                                                    </section>
+                                                    
+   <section id="ashtamudi">
+     <h1 style="margin: 10px ;">12.Ashtamudi</h1>
+                                                <div class="row">
+                                                  <div class="image">
+                                                    <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Ashtamudi.jpg" alt="" height="500px" width="900px" ><br>
+                                                
+                                                  </div>
+                                                  
+                                                
+                                                </div>
+                                                <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                  A quaint city in the warm locales of Kollam, Ashtamudi lies on the outer edges of the alluring Ashtamudi Lake. While a bustling trade centre in the past, it now attracts an impressive number of visitors form different corners of the globe. Visitors usually throng Ashtamudi to enjoy its impeccable beauty and treat themselves with the bucolic ambience of God’s Own Country. While in this pictorial city, you can witness cashew processing, coir manufacturing plans, traditional fishing, and lot more.
+      
+                                             </p>
+                                                  
+                                                  
+                                                  <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                       
+                                                
+                                                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                      November to February (Winter)
+
+</p><hr>
+                                                    
+                                                  
+                                                      <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                                    <p>Ashtamudi Lake, Thevally Palace, Alumkadavu Boat Building Yard, Monroe Island,
+      
+                                                    </p><hr>
+                                                    
+                                                   
+                                                   <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                                   
+                                                    <p>
+                                                      Kollam Junction (15km / 1 Hour)</p><hr>
+                                                    
+<h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                                    <p>Summer (March - May), Winter (November - February), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+       
+                                                 </section>
+  <section id="thiruvanathapuram">
+      <h1 style="margin: 10px ;">13.Thiruvananthapuram</h1>
+               <div class="row">
+                    <div class="image">
+                          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Thiruvananthapuram.jpg" alt="" height="500px" width="900px" ><br>
+                         </div>
+                          </div>
+                             <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                              The capital city of God’s Own Country, Thiruvananthapuram or Trivandrum, or the ‘Evergreen City of India’ is also the largest city in the state. Located at the south-western edge of Kerala, this city is the perfect example of how rural life gets mixed with the contemporary way of living.
+
+                              Dotted with numerous tourist spots, places of historical importance, scenic beaches, and much more, Trivandrum is a true treasure trove among visitors from all the walks of life. Rated as one of the finest Indian cities to live in, Thiruvananthapuram can also be called the ‘Economic Capital’ of Kerala.
+                               </p>
+                              <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                               <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                    November to February (Winter)
+                                        </p><hr>
+                                        <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                               <p>Ponmudi, Kovalam, Shanghumugham Beach, Aruvi Waterfalls, Akkulam Tourist Village, Veli Tourist Village, Aruvikkara Dam, Neyyar Dam & Wildlife Sanctuary, Peppara Dam & Wildlife Sanctuary, Poovar, Kowdiar Palace, Agasthyakoodam, Koyikkal Palace, Kanakakunnu Palace, Anchuthengu Fort, Napier Museum, Zoological Gardens, Vizhinjam, Thiruvallam, ParipallyGajamela, AnanthaPadmanabha Temple, AttukalBhagavathi Temple
+                              </p><hr>
+                                                                                                 
+                               <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                              <p>
+                                Trivandrum Central Railway Station</p><hr>
+                                                                                                 
+                                                                                                 
+                            <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                            <p>Summer (March - June), Winter (October - February), Monsoon (July - September)</p><hr style="color:green ; size: 50px;" ><br>
+            </section>
+
+
+            <section id="ponmudi">
+              <h1 style="margin: 10px ;">14.Ponmudi</h1>
+                       <div class="row">
+                            <div class="image">
+                                  <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Ponmudi.jpg" alt="" height="500px" width="900px" ><br>
+                                 </div>
+                                  </div>
+                                     <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        If you still think that Kerala is all about backwaters, mighty ocean, playful beaches, spice gardens, or evergreen coconut groves, you must visit the stunning hill station called Ponmudi! Around 55km away from the state capital, this promising hill station will make you rethink and create a whole new perception God’s Own Country!
+        Enchanted by the spellbinding beauty of the Western Ghats, a drive or ride to Ponmudi has its own fun and excitement. While for the nature lovers, this part of the journey opens an unknown window to Kerala’s mesmerising beauty, adrenaline seekers love to have a tryst with the thrills associated.
+                                       </p>
+                                      <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                       <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        November (Post Monsoon) to May (Summer End)
+                                                </p><hr>
+                                                <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                       <p>Aaranmula Boat Race, Trekking, Meenmutty Falls, Golden Valley, Peppara Wildlife Sanctuary, Shendurney Wildlife Sanctuary, Mankkayam Falls, Kallar, Koyikkal Palace, Agasthyamalai Biosphere Reserve, Sri Krishna Swami Temple                              </p><hr>
+                                                                                                         
+                                       <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                      <p>
+        Trivandrum Central Railway Station (61km)</p><hr>
+                                                                                                         
+                                                                                                         
+                                    <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                    <p>Summer (March - May), Winter (December - March), Monsoon (June - September)</p><hr style="color:green ; size: 50px;" ><br>
+                    </section>
+        
+                    <section id="varkala">
+                      <h1 style="margin: 10px ;">15.Varkala</h1>
+                               <div class="row">
+                                    <div class="image">
+                                          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Varkala.jpg" alt="" height="500px" width="900px" ><br>
+                                         </div>
+                                          </div>
+                                             <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                              Flaunting its gracious beauty and charm while having a tryst with the Arabian Sea, Varkala is surely one of the most gorgeous and best places to visit in Kerala! A kaleidoscopic coastal town in Trivandrum, this is in fact the only place in God’s Own Country where cliffs are found alongside the sea-line.
+
+                                              While being a hotspot among the beach lovers, Varkala is also known for the ancient Janardana Swami Temple that dates back to 2,000 years. If you are planning for a Kerala trip, make sure you visit this quaint town; it will keep you amazed all through with its impeccable beauty, devout ambience, and playful beach!
+                                               </p>
+                                              <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                               <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                Year-round Destination
+                                                        </p><hr>
+                                                        <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                               <p>Paragliding, Varkala Beach, Thiruvambadi Beach, Edava Beach, Kappil Beach, Papanasam Beach, 590 Cliff, Anjengo Fort, Sivagiri Mutt, Janardhanaswamy Temple, Ponnumthuruthu Island, Varkala Tunnel, Vishnu Temple, Varkala Aquarium, KaduvayilJuma Masjid, Varkala Lighthouse,</p><hr>
+                                                                                                                 
+                                               <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                              <p>
+                                                VarkalaSivagiri Railway Station</p><hr>
+                                                                                                                 
+                                                                                                                 
+                                            <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                            <p>Summer (April - June), Winter (October - March), Monsoon</p><hr style="color:green ; size: 50px;" ><br>
+                            </section>
+                
+                            <section id="malampuzha">
+                              <h1 style="margin: 10px ;">16.Malampuzha</h1>
+                                       <div class="row">
+                                            <div class="image">
+                                                  <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Malampuzha.jpg" alt="" height="500px" width="900px" ><br>
+                                                 </div>
+                                                  </div>
+                                                     <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                      India’s ‘Spice Capital’ is all about lush greeneries and heart-warming ambience, hence the name “God’s Own Country’! And while in Malampuzha, located in the Palakkad district, you can feel the true essence of Kerala and its bountiful nature.
+
+Mostly covered by evergreen vegetation, this part of the state is a picture-perfect display of how we should co-exist with Mother Nature. Malampuzha’s undulating beauty and tranquillity makes it a must to visit place in the entire region of Southern India.</p>
+                                                      <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                       <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                        August (Monsoon End) to April (Early Summer)
+                                                                </p><hr>
+                                                                <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                                       <p>Malampuzha Dam, Malampuzha Garden, Kava, Palakkad Fort, Dhoni Hills and Waterfalls, Thread Garden, Rock Garden, Snake Park, UdanKhatola, Fantasy Park,                                                               
+                                                       <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                                      <p>
+                                                        Palakkad Junction (8km)</p><hr>
+                                                                                                                         
+                                                                                                                         
+                                                    <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                                    <p>Summer (April - May), Winter (September - March), Monsoon (June - August)</p><hr style="color:green ; size: 50px;" ><br>
+                                    </section>
+
+                                    <section id="palakad">
+                                      <h1 style="margin: 10px ;">17.Palakad</h1>
+                                               <div class="row">
+                                                    <div class="image">
+                                                          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Palakkad.jpg" alt="" height="500px" width="900px" ><br>
+                                                         </div>
+                                                          </div>
+                                                             <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                              Palakkad or the ‘Gateway to Kerala’ is truly a paradise for the nature lovers and admirers. Situated at the foothills of the mighty Western Ghats, this scenic land is jotted with lush and evergreen vegetation all throughout, and is adored as the ‘Granary of Kerala’.Steeped with a glorious past, decked with diverse range of traditions, cultures, art & music, and the indigenous Malabar style of living, Palakkad surely qualifies for a natural treasure in Kerala’s tourism map. Also, the tropical climate that prevails in this gorgeous city, makes it a not-to-be missed place to visit in Kerala.</p>
+                                                              <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                               <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                                July (Mid-Monsoon) to March (Winter End)
+                                                                        </p><hr>
+                                                                        <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                                               <p>Palakkad Fort, Silent Valley National Park, Parambikulam Wild Life Sanctuary, Mayiladumpara Peacock Sanctuary, Malampuzha Dam and Gardens, Attappadi, Kava View Point, Rock Garden, Siruvani Reservoir, Kanjirapuzha Reservoir, Dhoni Forest (Trekking), Kalpathy Heritage Village and Temple Complex, Nelliyampathy Hills, Pothundi Dam and Reservoir, Mangalam Dam, Tipu's Fort, ThiruvalathurRanduMoorthy Temple, Jain Temple, Vadakkanthara Temple, Manapullikaavu, KalpathyAgraharam and Vishwanathaswamy Temple, KumarapuramTemple, EmoorBhagavathyTemple, Thiruvalathoor Shiva Temple,                                                             
+                                                               <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                                              <p>
+                                                                Palakad Junction</p><hr>
+                                                                                                                                 
+                                                                                                                                 
+                                                            <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                                            <p>Summer (April - May), Winter (September - March), Monsoon (June - August)</p><hr style="color:green ; size: 50px;" ><br>
+                                            </section>         
+                                            
+                                            
+
+
+                                            <section id="neliambathy">
+                                              <h1 style="margin: 10px ;">18.Nelliyampathy</h1>
+                                                       <div class="row">
+                                                            <div class="image">
+                                                                  <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Nelliampathy.jpg" alt="" height="500px" width="900px" ><br>
+                                                                 </div>
+                                                                  </div>
+                                                                     <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                                      If Kerala is called the ‘God’s Own Country’, Nelliampathy (or Nelliampathi) is fondly called the ‘God’s Own Village’! Located around 60km from Palakkad, this quaint hamlet is one of the least explored and equally stunning hill stations in Kerala.
+
+                                                                      With a captivating range of hills that soar up to an astounding height of 467-1,572m, Nelliampathy serves as an ideal getaway to enjoy and revel in the alluring charm of India’s Backwater Capital. With lofty peaks, rugged trails, and around 10-hair pin bends, this tiny, yet enthralling hill station also serves as a hotspot among the thrill and fun seekers.
+                                                                      
+                                                                      </p>
+                                                                      <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                                       <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                                        October (Pre-Winter) to March (Early Summer)
+                                                                                </p><hr>
+                                                                                <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                                                       <p>Trekking, Boating, Nelliyampathy Hills, Parambikulam Wildlife Sanctuary, Nenmara, Palagapandi Estate, Seetharkundu Viewpoint, Padagiri, Raja's Cliff, Pothundi Reservoir, Malampuzha Gardens, Nelliyampathy Gardens
+
+
+                                                                       <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                                                      <p>
+                                                                        Summer (February - May), Winter (November - March), Monsoon (June - October)</p><hr>
+                                                                                                                                         
+                                                                                                                                         
+                                                                    <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                                                    <p>Trivandrum International Airport (97km)</p><hr style="color:green ; size: 50px;" ><br>
+                                                    </section>         
+
+
+
+
+
+
+
+                                                    <section id="idukki">
+                                                      <h1 style="margin: 10px ;">18.idukki</h1>
+                                                               <div class="row">
+                                                                    <div class="image">
+                                                                          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Idukki.jpg" alt="" height="500px" width="900px" ><br>
+                                                                         </div>
+                                                                          </div>
+                                                                             <p style="margin-top: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                                              A gem in the lap of the mighty Western Ghats, Idukki boasts of being one of the evergreen and pristine districts in Kerala. Canopied by lush vegetation, this part of ‘India’s Backwater Capital’ has a unique charm and attracts visitors from almost all the corners of the globe.
+
+                                                                              Home to numerous natural marvels, lofty peaks like Anamudi and others, captivating sanctuaries, and spice gardens, this surreal part of Kerala is a must for every nature lovers. To note here, many of the popular Kerala tourist destinations like Munnar, Vagamon, Ramakkalmedu, Marayur, and Thekkady are located within this district.
+                                                                              
+                                                                              </p>
+                                                                              <h3 style="border: 3px dotted  ; background-color: rgb(235, 163, 19);width: 250px; height: 50px; color: white; ">Best Time to Visit</h3>
+                                                                               <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                                                                
+Year-round Destination
+
+
+                                                                                        </p><hr>
+                                                                                        <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 250px; height: 50px; color: white;">Tourist Attractions</h3>
+                                                                               <p>Periyar National Park, Periyar Lake, Idukki Arch Dam, Munnar, Vagamon, Thekkady, Nandukani, Painavu, Gavi, Murikkady, Kulamavu Dam, Anakkara, Hill View Park, Thommankuthu Falls, Keezharkuthu Falls, Mangala Devi Temple
+
+
+
+                                                            
+                                                                               <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;">Nearest Railway Station</h3>
+                                                                              <p>
+                                                                                Theni Junction (83km)
+
+</p><hr>
+                                                                                                                                                 
+                                                                                                                                                 
+                                                                            <h3 style="border: 3px dotted; background-color: rgb(235, 163, 19); width: 300px; height: 50px; color: white;" >Weather</h3>
+                                                                            <p>
+                                                                              Summer (March - May), Winter (November - February), Monsoon (June - September)
+                                                                              
+                                                                              </p><hr style="color:green ; size: 50px;" ><br>
+                                                            </section>         
+      
+                                                            
+
+<br><br><br>
+ 
+   <!-- Footer -->
+   <div class="footer" >
+
+   </div>
+<footer class=" text-center" style="background: linear-gradient(to bottom left, #33cc33 0%, #ff9900 100%)">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+      
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row ">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color: rgb(21, 136, 25);">Tourism Destinations</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="">Munnar Tourism
+                
+               </a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Wayanad Tourism</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!"> Kovalam Tourism</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">
+                Kovalam Tourism</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color: rgb(21, 136, 25);">Kerala Tour By Durations</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">2 Nights / 3 Days
+               
+              
+                </a>
+            </li>
+            <li>
+              <a class="text-body" href="#!"> 3 Nights / 4 Days</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">  4 Nights / 5 DaysLink 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">5 Nights / 6 Days</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color: rgb(55, 93, 8);">Quick Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">Places To visit In kerala
+               
+               
+                </a>
+            </li>
+            <li>
+              <a class="text-body" href="#!"> Things To Do in Kerala</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!"> Best Time To visit Kerala</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Attractions In kerala</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color: rgb(55, 93, 8);">Contact Us</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">Tel: +91-7527898065
+               
+               </a>
+            </li>
+            <li>
+              <a class="text-body" href="#!"> Tel: +91-8606140009</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!"> E-mail: info@ekeralatourism.net</a>
+            </li>
+           
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">keralatourism.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->   
+</div>                                                      
+</body>
+</html>
